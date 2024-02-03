@@ -17,6 +17,7 @@ https://knotty-carver-ffc.notion.site/Trovio-API-Testing-Sample-Project-0ef49ff8
     - store
     - user
       would all have their own "pages" created for them containing all the request logic
+- Test cases are split into categories depending on which endpoint they are testing, if the assertions are focused on pet endpoint they will be added to `tests/pet`, likewise if it focused on store endpoint it would be added to `tests/store`
 
 ## Usage / Running the test:
 
@@ -27,3 +28,13 @@ https://knotty-carver-ffc.notion.site/Trovio-API-Testing-Sample-Project-0ef49ff8
 2. Run the following script
 
    - npm run test
+
+## How to extend API tests:
+
+1. If required add API request body to `<endpoint>RequestBody.ts` file, Follow the examples there
+
+2. Add required request to `<endpoint>Request.ts` file, Follow examples there
+
+3. Create a new test file for test case, in the following schema: `TC00X_<testName>.ts` in the appropiate directory
+
+## View test results / Reporter
