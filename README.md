@@ -18,6 +18,8 @@ https://knotty-carver-ffc.notion.site/Trovio-API-Testing-Sample-Project-0ef49ff8
     - user
       would all have their own "pages" created for them containing all the request logic
 - Test cases are split into categories depending on which endpoint they are testing, if the assertions are focused on pet endpoint they will be added to `tests/pet`, likewise if it focused on store endpoint it would be added to `tests/store`
+- Automation framework can be configured to different environments through modifiying `.env.<env_name>` file
+-
 
 ## Usage / Running the test:
 
@@ -28,6 +30,8 @@ https://knotty-carver-ffc.notion.site/Trovio-API-Testing-Sample-Project-0ef49ff8
 2. Run the following script
 
    - npm run test
+
+### NOTE CONFIGURE ENV VARIABLES in a created file `.env.<ENV>` if required
 
 ## How to extend API tests:
 
