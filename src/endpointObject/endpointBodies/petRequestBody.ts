@@ -1,5 +1,5 @@
 import { DEFAULT_CATEGORY, DEFAULT_TAGS } from 'src/utils/static'
-export class PetRequestBodies {
+export default class PetRequestBodies {
   protected static addPetBody(
     petname: string,
     category: object,

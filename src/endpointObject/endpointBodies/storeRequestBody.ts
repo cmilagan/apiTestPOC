@@ -1,4 +1,4 @@
-export class StoreRequestBodies {
+export default class StoreRequestBodies {
   protected static addOrderBody(petId: number, quantity: number) {
     return {
       id: 0,
