@@ -1,0 +1,12 @@
+{
+  "name": "apitestpoc",
+  "version": "1.0.0",
+  "description": "The following is a simple POC for API automation based on the following server: https://petstore.swagger.io/#/store/getInventory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
