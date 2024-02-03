@@ -10,6 +10,13 @@ https://knotty-carver-ffc.notion.site/Trovio-API-Testing-Sample-Project-0ef49ff8
 
 - Written using playwright module for API testing
 - Written in typescript
+- Configured with eslint & prettier for syntax checking
+- Design Pattern: Page Object Model
+  - Pages in this case would be the different API endpoints for example:
+    - pet
+    - store
+    - user
+      would all have their own "pages" created for them containing all the request logic
 
 ## Usage / Running the test:
 
@@ -18,4 +25,5 @@ https://knotty-carver-ffc.notion.site/Trovio-API-Testing-Sample-Project-0ef49ff8
    - npm install
 
 2. Run the following script
+
    - npm run test
