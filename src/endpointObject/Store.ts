@@ -1,11 +1,4 @@
-import { APIRequestContext } from 'playwright/test'
-
 export default class Store {
-  readonly request: APIRequestContext
-
-  constructor(request: APIRequestContext) {
-    this.request = request
-  }
   constructOrderBody(petId: number, quantity: number) {
     return {
       id: 0,

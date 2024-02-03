@@ -7,10 +7,10 @@ export const test = baseTest.extend<{
   pet: Pet
   store: Store
 }>({
-  pet: async ({ request }, use) => {
-    await use(new Pet(request))
+  pet: async ({}, use) => {
+    await use(new Pet())
   },
-  store: async ({ request }, use) => {
-    await use(new Store(request))
+  store: async ({}, use) => {
+    await use(new Store())
   },
 })

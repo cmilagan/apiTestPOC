@@ -1,20 +1,20 @@
 import { DEFAULT_CATEGORY, DEFAULT_TAGS } from 'src/utils/static'
-import { APIRequestContext } from 'playwright/test'
 
 export default class Pet {
-  readonly request: APIRequestContext
-
-  constructor(request: APIRequestContext) {
-    this.request = request
-  }
-  constructPetBody(petname: string, category?: object, tags?: Array<object>) {
+  constructPetBody(
+    petname: string,
+    petId?: number,
+    category?: object,
+    tags?: Array<object>,
+    status?: string,
+  ) {
     return {
-      id: 0,
+      id: petId || 0,
       category: category || DEFAULT_CATEGORY,
       name: petname,
       photoUrls: ['string'],
       tags: tags || DEFAULT_TAGS,
-      status: 'available',
+      status: status || 'available',
     }
   }
 
